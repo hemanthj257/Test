@@ -1,0 +1,19 @@
+{
+  "engines": {
+    "node": "21.x"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "express-validator": "^7.2.0",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.1"
+  },
+  "scripts": {
+    "serve:dev": "firebase use dev && yarn build && IS_LOCAL=1 firebase emulators:start --only functions",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.js",
+    "predeploy": "npm run build"
+  }
+}

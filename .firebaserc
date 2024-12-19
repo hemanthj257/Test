@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "",
+    "dev": "intern-will2508-2700c",
+    "prod": "",
+    "Intern": "intern-will2508-2700c"
+  },
+  "targets": {},
+  "etags": {}
+}
